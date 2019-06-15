@@ -1,10 +1,12 @@
 package przemek.springframework.sfpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import przemek.springframework.sfpetclinic.model.Owner;
 import przemek.springframework.sfpetclinic.services.CrudService;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
     @Override
     public Set<Owner> findByAll() {
