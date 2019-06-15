@@ -10,7 +10,6 @@ import javax.persistence.MappedSuperclass;
 @NoArgsConstructor
 @AllArgsConstructor
 @MappedSuperclass
-@Entity
 public class Owner extends Person {
 
     public Owner(Long id, String firstName, String lastName, String address, String city,

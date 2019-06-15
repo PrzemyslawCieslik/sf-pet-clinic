@@ -13,7 +13,7 @@ import javax.persistence.MappedSuperclass;
 @NoArgsConstructor
 @AllArgsConstructor
 @MappedSuperclass
-@Entity
+
 public class Speciality extends BaseEntity{
 
     private String description;

@@ -14,7 +14,6 @@ import javax.persistence.MappedSuperclass;
 @NoArgsConstructor
 @AllArgsConstructor
 @MappedSuperclass
-@Entity
 public class Person extends BaseEntity {
 
     public Person(Long id, String firstName, String lastName){

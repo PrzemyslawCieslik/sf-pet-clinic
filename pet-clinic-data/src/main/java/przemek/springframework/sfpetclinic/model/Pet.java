@@ -14,7 +14,6 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 @MappedSuperclass
-@Entity
 public class Pet extends BaseEntity {
 
     public Pet(Long id, String name, PetType petType, Owner owner, LocalDate birthDate){
