@@ -3,11 +3,12 @@ package przemek.springframework.sfpetclinic.services.map;
 import org.springframework.stereotype.Service;
 import przemek.springframework.sfpetclinic.model.Owner;
 import przemek.springframework.sfpetclinic.services.CrudService;
+import przemek.springframework.sfpetclinic.services.OwnerService;
 
 import java.util.Set;
 
 @Service
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Set<Owner> findByAll() {
         return super.findByAll();
@@ -31,5 +32,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
     @Override
     public Owner findById(Long id) {
         return super.findById(id);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 }
