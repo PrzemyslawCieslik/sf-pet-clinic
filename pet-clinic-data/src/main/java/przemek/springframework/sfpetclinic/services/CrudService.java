@@ -1,10 +1,8 @@
 package przemek.springframework.sfpetclinic.services;
 
-import org.springframework.stereotype.Service;
-
 import java.util.Set;
 
-@Service
+
 public interface CrudService<T, ID>  {
 
     Set<T> findByAll();

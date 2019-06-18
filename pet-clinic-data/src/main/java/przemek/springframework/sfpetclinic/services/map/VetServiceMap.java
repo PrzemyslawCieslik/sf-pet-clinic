@@ -2,7 +2,6 @@ package przemek.springframework.sfpetclinic.services.map;
 
 import org.springframework.stereotype.Service;
 import przemek.springframework.sfpetclinic.model.Vet;
-import przemek.springframework.sfpetclinic.services.CrudService;
 import przemek.springframework.sfpetclinic.services.VetService;
 
 import java.util.Set;
