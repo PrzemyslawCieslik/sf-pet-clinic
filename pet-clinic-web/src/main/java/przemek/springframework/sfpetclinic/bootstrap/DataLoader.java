@@ -6,8 +6,6 @@ import przemek.springframework.sfpetclinic.model.Owner;
 import przemek.springframework.sfpetclinic.model.Vet;
 import przemek.springframework.sfpetclinic.services.OwnerService;
 import przemek.springframework.sfpetclinic.services.VetService;
-import przemek.springframework.sfpetclinic.services.map.OwnerServiceMap;
-import przemek.springframework.sfpetclinic.services.map.VetServiceMap;
 
 
 @Component
