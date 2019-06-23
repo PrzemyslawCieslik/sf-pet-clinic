@@ -1,9 +1,12 @@
 package przemek.springframework.sfpetclinic.model;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-import javax.persistence.Entity;
 import javax.persistence.MappedSuperclass;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -24,4 +27,6 @@ public class Owner extends Person {
     private String address;
     private String city;
     private String telephone;
+
+    private Set<Pet> pets;
 }
