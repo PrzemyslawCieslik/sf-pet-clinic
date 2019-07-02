@@ -1,9 +1,6 @@
 package przemek.springframework.sfpetclinic.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -14,9 +11,9 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@MappedSuperclass
 public class Owner extends Person {
 
+    @Builder
     public Owner(Long id, String firstName, String lastName, String address, String city,
                  String telephone){
 

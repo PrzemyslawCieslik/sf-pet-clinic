@@ -1,6 +1,7 @@
 package przemek.springframework.sfpetclinic.repositories;
 
 import org.springframework.data.repository.CrudRepository;
+import przemek.springframework.sfpetclinic.model.Vet;
 
-public interface Visit extends CrudRepository<Visit, Long> {
+public interface VetRepository extends CrudRepository<Vet, Long> {
 }

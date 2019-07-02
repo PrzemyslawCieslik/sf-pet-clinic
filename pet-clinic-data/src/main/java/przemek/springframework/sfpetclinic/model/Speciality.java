@@ -1,13 +1,9 @@
 package przemek.springframework.sfpetclinic.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.MappedSuperclass;
 import javax.persistence.Table;
 
 @Entity
@@ -16,8 +12,7 @@ import javax.persistence.Table;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@MappedSuperclass
-
+@Builder
 public class Speciality extends BaseEntity{
 
     @Column(name = "description")

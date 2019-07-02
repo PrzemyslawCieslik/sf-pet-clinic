@@ -1,9 +1,6 @@
 package przemek.springframework.sfpetclinic.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -15,9 +12,9 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@MappedSuperclass
 public class Pet extends BaseEntity {
 
+    @Builder
     public Pet(Long id, String name, PetType petType, Owner owner, LocalDate birthDate){
         super(id);
         this.name = name;

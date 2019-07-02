@@ -1,9 +1,6 @@
 package przemek.springframework.sfpetclinic.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -14,9 +11,8 @@ import java.time.LocalDate;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@MappedSuperclass
-
-public class Visit {
+@Builder
+public class Visit extends BaseEntity {
 
     @Column(name = "date")
     private LocalDate date;
