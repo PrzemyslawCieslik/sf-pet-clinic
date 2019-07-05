@@ -1,10 +1,12 @@
 package przemek.springframework.sfpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import przemek.springframework.sfpetclinic.model.Visit;
 import przemek.springframework.sfpetclinic.services.VisitService;
 
 import java.util.Set;
 
+@Service
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
 
     @Override

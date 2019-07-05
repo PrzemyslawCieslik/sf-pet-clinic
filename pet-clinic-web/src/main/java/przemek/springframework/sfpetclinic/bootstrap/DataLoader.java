@@ -4,8 +4,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import przemek.springframework.sfpetclinic.model.Owner;
 import przemek.springframework.sfpetclinic.model.Vet;
-import przemek.springframework.sfpetclinic.services.OwnerService;
-import przemek.springframework.sfpetclinic.services.VetService;
+import przemek.springframework.sfpetclinic.services.*;
 
 
 @Component
@@ -13,10 +12,19 @@ public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
     private final VetService vetService;
+    private final PetTypeService petTypeService;
+    private final PetService petService;
+    private final SpecialtiesService specialtiesService;
+    private final VisitService visitService;
 
-    public DataLoader(OwnerService ownerService, VetService vetService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService,
+                      PetService petService, SpecialtiesService specialtiesService, VisitService visitService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
+        this.petTypeService = petTypeService;
+        this.petService = petService;
+        this.specialtiesService = specialtiesService;
+        this.visitService = visitService;
     }
 
 
