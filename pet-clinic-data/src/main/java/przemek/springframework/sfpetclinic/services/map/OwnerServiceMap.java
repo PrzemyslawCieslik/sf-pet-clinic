@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import przemek.springframework.sfpetclinic.model.Owner;
 import przemek.springframework.sfpetclinic.services.OwnerService;
 
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -38,5 +39,12 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
     @Override
     public Owner findByLastName(String lastName) {
         return findByLastName(lastName);
+    }
+
+    @Override
+    public List<Owner> findByLastNameLike(String lastName) {
+
+        //todo - impl
+        return null;
     }
 }
