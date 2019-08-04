@@ -12,7 +12,7 @@ import java.util.Set;
 @Profile({"default","map"})
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
-    public Set<Owner> findByAll() {
+    public Set<Owner> findAll() {
         return super.findByAll();
     }
 
