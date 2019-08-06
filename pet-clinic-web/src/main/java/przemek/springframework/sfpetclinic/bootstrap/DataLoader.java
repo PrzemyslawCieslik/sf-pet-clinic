@@ -3,6 +3,8 @@ package przemek.springframework.sfpetclinic.bootstrap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import przemek.springframework.sfpetclinic.model.Owner;
+import przemek.springframework.sfpetclinic.model.Pet;
+import przemek.springframework.sfpetclinic.model.PetType;
 import przemek.springframework.sfpetclinic.model.Vet;
 import przemek.springframework.sfpetclinic.services.*;
 
@@ -31,6 +33,14 @@ public class DataLoader implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
+        PetType dog = new PetType();
+        dog.setName("Dog");
+        PetType savedDogPetType = petTypeService.save(dog);
+
+        PetType cat = new PetType();
+        cat.setName("Cat");
+        PetType savedCatPetType = petTypeService.save(cat);
+
         Owner owner1 = new Owner();
         owner1.setId(1L);
         owner1.setFirstName("Michael");
@@ -39,9 +49,7 @@ public class DataLoader implements CommandLineRunner {
         owner1.setCity("Miami");
         owner1.setTelephone("1231231234");
 
-
         ownerService.save(owner1);
-
 
         Owner owner2 = new Owner();
         owner2.setFirstName("Fiona");
